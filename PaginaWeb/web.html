@@ -3,11 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML5</title>
+    <title>MUNDO DEPORTE</title>
 </head>
 <body>
     <header style="text-align: center;">
-        <h1>MUNDO DEPORTE</h1>
+        <h1 style="color: red">MUNDO DEPORTE</h1>
+
+    <style>
+        .caja_texto{
+            width: 60%;
+            margin-bottom: 50px;
+        }
+        .absoluto1 {
+            position: absolute;
+            /* En los absolutos debemos de dar un top y un left*/
+            top: 150px;
+            left: 900px;
+        }
+    </style>
     </header>
 
     <nav style="text-align: center;">
@@ -21,22 +34,39 @@
     </nav>
 
     <section>
-        <h2>/Actualidad</h2>
+        <h2 style="color: darkred; "><b><u>Actualidad</u></b></h2>
         <article>
+            <div class="caja_texto">
             <h3>La Liga cada vez más disputada</h3>
-            <p>Tras la derrota del Atleti, el Barsa va a por todas</p>
+            <img id="fotoLaLiga" src="laliga.jpg" style="width: 45%; height: 45%; float: right;"/>
+            <p>Tras la derrota del Atleti, el Barsa va a por todas. Despues del pinchazo de los del Cholo, el conjunto azulgrana depende de si mismo. Todo se decidira en el Barça-Atletico del 08 de Mayo, en el Cam Nou. Los de Koeman sueñan con el doblete. Laporta ya le ha transmitido a todo la plantilla y cuerpo tecnico la importancia que tiene este titulo para el club, ya que la entidad blaugrana no esta pasando por su mejor momento economico. Por otro lado, los colchoneros quieren poner el broche de oro a una liga que han dominado todo el curso, y que se les esta escapando en los ultimos compases.</p>
+            <br/>
+            </div>
         </article>
         <article>
+            <div class="caja_texto">
             <h3>Nuevo capitulo en la renovación de Sergio Ramos</h3>
-            <p>El jugador acepta cobrar menos, pero pide dos años de contrato</p>
+            <img id="renovacionRamos" src="renovacionramos.jpg" style="width: 40%; height: 40%; float: left; margin-right: 25px;" />
+            <p>El jugador acepta cobrar menos, pero pide dos años de contrato. El de Camas tiene varias ofertas para jugar en la Premier, y el contrato que le ofrecen es de 2 años. Segun ha podido saber este medio, Rene Ramos, representante del futbolista, ha sido visto esta semana en Manchester, y podria estar negociando un traspaso al equipo que actualmente dirige Pep Guardiola. La apuesta de Florentino, de momento, sigue siendo de renovacion anual. Veremos como acaba este nuevo capitulo en el ya habitual culebron de todos los veranos</p>
+            <br/>
+            </div>
+        </article>
+        <article>
+            <div class="caja_texto">
+            <h3>Los 1º dan un golpe sobre la mesa en el Estrella Damm Alicante Open 2021</h3>
+            <img id="lebronGalan" src="lebronygalan.jpg" style="width: 45%; height: 45%; float: right;" />
+            <p>Juan Lebron y Alejandro Galan, los numero 1 del mundo en el Ranking WPT, depues de hacer un torneo sin precedentes en la trayectoria de esta joven pareja, ganan el Open de Alicante con una victoria muy holgada en la final (6-1/6-3) frente a Franco Stupazuc y Alex Ruiz. Sabor agridulce para Ruiz y Stupazuc, que se quedan otra vez a la puertas del campeonato en el segundo titulo de la temporada. </p>
+            <br/>
+            </div>
         </article>
     </section>
 
     <aside>
-        <img  />
+        <a href="https://padelsototorrejon.com/"><img class="absoluto1" src="clasespadel.jpg"/></a>
     </aside>
 
     <footer>
+        <br/>
         <p>Todos los derechos reservados. Mundo Deporte copyright 2021 &copy;</p>
     </footer>
 </body>
