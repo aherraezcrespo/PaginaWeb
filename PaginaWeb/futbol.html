@@ -11,6 +11,14 @@
             *{
                 padding: 0;
             }
+            .logo{
+                position: fixed;
+                top: 8px;
+                left: 1200px;
+                z-index: 25;
+                width: 10%; 
+                height: 10%;
+            } 
             #titulo{
                 position: fixed;
                 width: 100%;
@@ -19,7 +27,6 @@
                 left: 0px;
                 color: blue;
                 background-color: aqua;
-                text-align: center;
                 z-index: 3;
             }
             section{
@@ -54,15 +61,16 @@
 		    }
             #menu{
             position: absolute;
-            width: 98%;
+            width: 100%;
             top: 59px;
-            left: 26%;
+            left: 0%;
             z-index: 2;
+            background-color: blue;
             }
             </style>
         </header>
         <div id="titulo">
-            <h1><u>FUTBOL</u></h1> 
+            <h1 style="margin-left: 50px;"><u>FUTBOL</u></h1> 
         </div>
         <nav>
             <ul id="menu">
@@ -83,6 +91,11 @@
             <li><a href=contacto.html>Contacto</a></li>
             </ul>
         </nav>
+    
+        <aside>
+            <a href="web.html"><img class="logo" src="logo.jpg"/></a>
+        </aside>
+    
     <footer>
         <p>Todos los derechos reservados. Mundo Deporte copyright 2021 &copy;</p>
     </footer>

@@ -11,13 +11,22 @@
         *{
             padding: 0;
         }
+        .logo{
+            position: fixed;
+            top: 8px;
+            left: 1200px;
+            z-index: 25;
+            width: 10%; 
+            height: 10%;
+        } 
         .caja_texto{
         width: 40%;
         margin-bottom: 50px;
+        list-style: circle;
         }
         .numero{
         position: absolute;
-        top: 300px;
+        top: 220px;
         right: 300px;
         }
         #titulo{
@@ -28,11 +37,10 @@
             left: 0px;
             color: blue;
             background-color: aqua;
-            text-align: center;
             z-index: 3;
         }
         section{
-        margin-top: 250px;
+        margin-top: 150px;
         }
         ul{
         list-style: none;
@@ -63,15 +71,16 @@
 		}
         #menu{
             position: absolute;
-            width: 98%;
+            width: 100%;
             top: 59px;
-            left: 26%;
+            left: 0%;
             z-index: 2;
+            background-color: blue;
         }
         </style>
     </header>
     <div id="titulo">
-        <h1><u>AREAS DE ACTUACION</u></h1> 
+        <h1 style="margin-left: 50px;"><u>AREAS DE ACTUACION</u></h1> 
     </div>
     <nav>
         <ul id="menu">
@@ -100,7 +109,7 @@
     <p>Como cualquier medio digital, nuestra principal fuente de financiacion es la publicidad. Para ello reservamos espacios en nuestra pagina principal (<a href="web.html">Inicio</a>), donde podemos publicar tu anuncio. </p>
     <p>Actualmente, la pagina esta recibiendo una media de 1500 visitas diarias, con varios repuntes cuando se da un acontecimiento deportivo de relevancia. Esto nos proporciona una audiencia a nivel nacional lo suficiente solvente como para que podamos dar visibilidad a tus proyectos, en un medio 100% digital, joven y dinamico.</p>
     <p>Ya confian en nosotros para hacer su publicidad:</p>
-    <ul type="circle">
+    <ul type= circle><b>
         <li>NIKE</li>
         <li>ASICS</li>
         <li>WORLD PADEL TOUR</li>
@@ -108,7 +117,7 @@
         <li>MUTUA MADRILEÑA</li>
         <li>CAIXABANK</li>
         <li>REDBULL</li>
-    </ul>
+    </b></ul>
     </div>
 
     <div class="numero">
@@ -117,6 +126,7 @@
 
     <aside>
         <a href="https://www.asics.com/es/es-es/"><img src="asic.jpg" style="margin-left: 25%; width: 50%; height: 50%;"/></a>
+        <a href="web.html"><img class="logo" src="logo.jpg"/></a>
     </aside>
     </section>
     <footer>
