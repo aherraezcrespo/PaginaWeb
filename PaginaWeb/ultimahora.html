@@ -8,6 +8,9 @@
 <body>
     <header>
         <style>
+            *{
+                padding: 0;
+            }
             .caja_texto{
                 width: 60%;
                 margin-bottom: 50px;
@@ -51,12 +54,20 @@
                 float: left;
                 text-align:center;
             }
+            #menu li ul {
+			display:none;
+			position:absolute;
+			min-width:140px;
+		    }
+            #menu li:hover>ul {
+				display:block;
+		    }
             #menu{
-                position: absolute;
-                width: 98%;
-                top: 59px;
-                left: 20%;
-                z-index: 2;
+            position: absolute;
+            width: 98%;
+            top: 59px;
+            left: 26%;
+            z-index: 2;
             }
             </style>
         </header>
