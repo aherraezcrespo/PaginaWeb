@@ -6,32 +6,94 @@
     <title>AREAS DE ACTUACION</title>
 </head>
 <body>
-    <header style="text-align: center;">
-        <h1>AREAS DE ACTUACION</h1>
-    
-    <style>
-    .caja_texto{
+    <header>
+        <style>
+        *{
+            padding: 0;
+        }
+        .caja_texto{
         width: 40%;
         margin-bottom: 50px;
-    }
-    .numero{
+        }
+        .numero{
         position: absolute;
-        top: 220px;
+        top: 300px;
         right: 300px;
-    }
-    </style>
+        }
+        #titulo{
+            position: fixed;
+            width: 100%;
+            height: 75px;
+            top: 0px;
+            left: 0px;
+            color: blue;
+            background-color: aqua;
+            text-align: center;
+            z-index: 3;
+        }
+        section{
+        margin-top: 250px;
+        }
+        ul{
+        list-style: none;
+        }
+        #menu li>a{
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            display: block;
+            text-decoration: none;
+            min-width: 100px;
+        }
+        #menu li>a:hover{
+            color: black;
+            background-color: aqua;
+        }
+        #menu>li{
+            float: left;
+            text-align:center;
+        }
+        #menu li ul {
+			display:none;
+			position:absolute;
+			min-width:140px;
+		}
+        #menu li:hover>ul {
+				display:block;
+		}
+        #menu{
+            position: absolute;
+            width: 98%;
+            top: 59px;
+            left: 26%;
+            z-index: 2;
+        }
+        </style>
     </header>
-
-    <nav style="text-align: center;">
-        <a href=web.html>Inicio</a>
-        <a href=ultimahora.html>Última hora</a> 
-        <a href=futbol.html>Fúbol</a>
-        <a href=padel.html>Padel</a>
-        <a href=quienes_somos.html>Quiénes somos</a>
-        <a href=areas_de_actuacion.html>Áreas de actuación</a>
-        <a href=contacto.html>Contacto</a>
+    <div id="titulo">
+        <h1><u>AREAS DE ACTUACION</u></h1> 
+    </div>
+    <nav>
+        <ul id="menu">
+        <li><a href=web.html>Inicio</a></li>
+        <li><a href=ultimahora.html>Última hora</a></li>
+            <li><a href=deportes.html>Deportes</a>
+            <ul>
+                <li><a href=futbol.html>Fúbol</a></li>
+                <li><a href=padel.html>Padel</a></li>
+            </ul>
+            </li>
+            <li><a href=nosotros.html>Nosotros</a>
+            <ul>
+                <li><a href=quienes_somos.html>Quiénes somos</a></li>
+                <li><a href=areas_de_actuacion.html>Áreas de actuación</a></li>
+            </ul>
+            </li>
+        <li><a href=contacto.html>Contacto</a></li>
+        </ul>
     </nav>
 
+    <section>
     <h1><b> Llamanos! </b></h1>
 
     <div class="caja_texto">
@@ -52,11 +114,11 @@
     <div class="numero">
         <h2 style="border: 2px solid red;">91 676 55 39 - 676 44 32 17</h2>
     </div>
-    
+
     <aside>
         <a href="https://www.asics.com/es/es-es/"><img src="asic.jpg" style="margin-left: 25%; width: 50%; height: 50%;"/></a>
     </aside>
-
+    </section>
     <footer>
         <p>Todos los derechos reservados. Mundo Deporte copyright 2021 &copy;</p>
     </footer>

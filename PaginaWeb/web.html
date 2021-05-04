@@ -6,10 +6,11 @@
     <title>MUNDO DEPORTE</title>
 </head>
 <body>
-    <header style="text-align: center;">
-        <h1 style="color: red">MUNDO DEPORTE</h1>
-
-    <style>
+    <header>
+        <style>
+        *{
+            padding: 0;
+        }
         .caja_texto{
             width: 60%;
             margin-bottom: 50px;
@@ -18,20 +19,80 @@
             position: fixed;
             top: 150px;
             left: 950px;
+            z-index: 1;
         }
-    </style>
+        #titulo{
+            position: fixed;
+            width: 100%;
+            height: 75px;
+            top: 0px;
+            left: 0px;
+            color: blue;
+            background-color: aqua;
+            text-align: center;
+            z-index: 3;
+        }
+        section{
+        margin-top: 250px;
+        }
+        ul{
+        list-style: none;
+        }
+        #menu li>a{
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            display: block;
+            text-decoration: none;
+            min-width: 100px;
+        }
+        #menu li>a:hover{
+            color: black;
+            background-color: aqua;
+        }
+        #menu>li{
+            float: left;
+            text-align:center;
+        }
+        #menu li ul {
+			display:none;
+			position:absolute;
+			min-width:140px;
+		}
+        #menu li:hover>ul {
+				display:block;
+		}
+        #menu{
+            position: absolute;
+            width: 98%;
+            top: 59px;
+            left: 26%;
+            z-index: 2;
+        }
+        </style>
     </header>
-
-    <nav style="text-align: center;">
-        <a href=web.html>Inicio</a>
-        <a href=ultimahora.html>Última hora</a> 
-        <a href=futbol.html>Fúbol</a>
-        <a href=padel.html>Padel</a>
-        <a href=quienes_somos.html>Quiénes somos</a>
-        <a href=areas_de_actuacion.html>Áreas de actuación</a>
-        <a href=contacto.html>Contacto</a>
+    <div id="titulo">
+        <h1><u>MUNDO DEPORTE</u></h1> 
+    </div>
+    <nav>
+        <ul id="menu">
+        <li><a href=web.html>Inicio</a></li>
+        <li><a href=ultimahora.html>Última hora</a></li>
+            <li><a href=deportes.html>Deportes</a>
+            <ul>
+                <li><a href=futbol.html>Fúbol</a></li>
+                <li><a href=padel.html>Padel</a></li>
+            </ul>
+            </li>
+            <li><a href=nosotros.html>Nosotros</a>
+            <ul>
+                <li><a href=quienes_somos.html>Quiénes somos</a></li>
+                <li><a href=areas_de_actuacion.html>Áreas de actuación</a></li>
+            </ul>
+            </li>
+        <li><a href=contacto.html>Contacto</a></li>
+        </ul>
     </nav>
-
     <section>
         <h2 style="color: darkred; "><b><u>Actualidad</u></b></h2>
         <article>
